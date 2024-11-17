@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 10% auto;
+    padding: 20px;
+    max-width: 90%; /* เพิ่มการจำกัดความกว้างสำหรับอุปกรณ์ขนาดเล็ก */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+h1 {
+    font-size: 2em; /* ลดขนาดฟอนต์ให้พอดีกับหน้าจอเล็ก */
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em; /* ปรับขนาดข้อความทั่วไป */
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #ff8a75;
+}
+
+#surprise {
+    margin-top: 20px;
+    font-size: 1em; /* ลดขนาดข้อความให้เหมาะกับมือถือ */
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Media Queries สำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8em; /* ลดขนาดหัวข้อสำหรับมือถือ */
+    }
+
+    p {
+        font-size: 0.9em; /* ลดขนาดข้อความทั่วไป */
+    }
+
+    button {
+        font-size: 1em; /* ลดขนาดปุ่ม */
+        padding: 8px 15px;
+    }
+
+    .container {
+        margin-top: 20%; /* ปรับระยะห่างจากด้านบน */
+        padding: 15px;
+    }
+}
